@@ -11,7 +11,7 @@ export default defineConfig({
 			title: "Yuri's Docs",
 			social: [
 				{ icon: 'discord', label: 'Discord', href: 'https://github.com/withastro/starlight' },
-				{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' },
+				{ icon: 'github', label: 'GitHub', href: 'https://github.com/elyosemite' },
 			],
 			sidebar: [
 				{
@@ -22,12 +22,17 @@ export default defineConfig({
 						{ label: 'Introduction', slug: 'guides/instruction' },
 						{ label: 'Introduction to Terraform', slug: 'guides/terraform' },
 						{ label: 'Introduction to vm', slug: 'guides/virtualmachine' },
-						{ label: 'Why use Architecture Decisin Record in your Organization', slug: 'guides/why-use-adr' },
 					],
 				},
 				{
 					label: 'Reference',
 					autogenerate: { directory: 'reference' },
+				},
+				{
+					label: 'Software Architecture',
+					items: [
+						{ label: 'Why use Architecture Decisin Record in your Organization', slug: 'software-architecture/why-use-adr' },
+					]
 				},
 			]
 		}),
